@@ -7,7 +7,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <nav>
-          <div className="bg-black h-[100px] w-full">
+          <div className="bg-black h-[100px] w-full h-0.5">
           <h1>Maushish.co</h1>
           <a>Blogs</a>
           <a>Hire me</a>    
