@@ -18,7 +18,7 @@ module.exports = {
 
       },
       colors:{
-        'blog':"#7A7A7A",
+        'blog':"#4E4E4F",
 
       },
       fontSize:{
