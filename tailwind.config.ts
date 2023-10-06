@@ -13,12 +13,18 @@ module.exports = {
       backgroundImage:{
         'main':"url('/noise.png')",
         'graph':"url('/graphs.png')",
-        'gradient':"url('/gradient.png')",
+        'hero':"url('/gradient.png')",
+        'grads':"url('/grads.png')",
+
       },
       colors:{
         'blog':"#7A7A7A",
 
       },
+      fontSize:{
+        'lamba':'11rem',
+        'lund':'14rem',
+      }
     },
   },
   plugins: [],
