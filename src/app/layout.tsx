@@ -1,3 +1,14 @@
+import "./globals.css"
+import {Inter} from "next/font/google"
+const inter=Inter({
+  subsets:["latin"]
+});
+
+export const metadata={
+  title:"Maushish.co", 
+  description:"Made by Maushish Yadav"
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -5,17 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <nav>
-          <div className="bg-black h-[100px] w-full h-0.5">
-          <h1>Maushish.co</h1>
-          <a>Blogs</a>
-          <a>Hire me</a>    
-          </div>
-        </nav>
-
-        {children}
-      </body>
+      <body className={`${inter.className} bg-main `}>
+        {children}</body>
     </html>
   )
 }
