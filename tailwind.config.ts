@@ -13,7 +13,7 @@ module.exports = {
       fontFamily:{
         'user-bold':['User-Bold'],
         'user':['User'],
-        'gilroy':['Gilroy-ExtraBold'],
+        'lomo':['Gilroy-ExtraBold'],
 
       },
       keyframes: {
