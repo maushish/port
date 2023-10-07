@@ -8,4 +8,8 @@
 @font-face {
     font-family: User;
     src: url('../components/User\ W00\ Medium.ttf');
+};
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url('../components/Gilroy-ExtraBold.ttf');
 }
