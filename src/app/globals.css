@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: User-Bold;
+    src: url('../components/User\ Upright\ W00\ Bold.ttf');
+};
+@font-face {
+    font-family: User;
+    src: url('../components/User\ W00\ Medium.ttf');
+}
