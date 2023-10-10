@@ -18,16 +18,15 @@ module.exports = {
       },
       keyframes: {
         animatedgradient: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
+          '0%': { backgroundPosition: '0%' },
+          '100%': { backgroundPosition: '0% 200%' },
         },
       },
       backgroundSize: {
         '300%': '300%',
       },
       animation: {
-        gradient: 'animatedgradient 6s ease infinite alternate',
+        gradient: 'animatedgradient 10s ease infinite linear',
       },
       backgroundImage:{
         'main':"url('/noise.png')",

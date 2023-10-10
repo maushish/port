@@ -3,13 +3,13 @@
 @tailwind utilities;
 @font-face {
     font-family: User-Bold;
-    src: url('../assets/User\ Upright\ W00\ Bold.ttf');
+    src: url('/assets/User\ Upright\ W00\ Bold.ttf');
 };
 @font-face {
     font-family: User;
-    src: url('../assets/User\ W00\ Medium.ttf');
+    src: url('/assets/User\ W00\ Medium.ttf');
 };
 @font-face {
     font-family: Gilroy-ExtraBold;
-    src: url('../assets/Gilroy-ExtraBold.woff');
+    src: url('/assets/Gilroy-ExtraBold.ttf');
 }
