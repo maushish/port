@@ -1,14 +1,26 @@
+"use client"
+import { Menu } from "@material-tailwind/react"
+import { FaBars } from "react-icons/fa";
+
+import { useState } from "react"
 export default function navbar(){
-    return(
-        <header className=" fixed container flex flex-wrap  " >
-        <nav className='bg-black max-w-full text-white flex flex-col items-center justify-center h-[25vh]'>
-          <h1 className='relative  left-10 lg:top-9 md:top-4 text-5xl md:text-3xl  font-user-bold'>Maushish.co</h1>
-          <a className='relative  right-[35vh] px-12 py-2 bg-blog rounded-xl text-4xl top-8 font-user-bold  '>Blogs</a>
-          <a className='relative  right-[5vh] px-12 py-2 border-x-2 border-white border-y-2 rounded-xl top-8 text-4xl font-user-bold'>Hire me</a>
-          <hr className=" w-full mx-auto my-4 bg-gray-100  fixed"/>
-        </nav>
-        
-        
-      </header>
-    )
+  const [menu,setMenu]=useState(false)
+  const handleMenu=()=>{
+      setMenu(!menu);
+  }
+  return (
+    <header className=" bg-black z-20  backdrop-filter backdrop-blur-lg bg-opacity-30 fixed top-0 left-0 right-0 w-full h-[14vh] flex justify-between items-center">
+
+      <h1 className=" text-5xl md:text-3xl font-user-bold text-white relative ml-[5vh] mb-4 z-20 ">Maushish.co</h1>
+      <div className="flex w-full justify-end z-20 gap-10">
+        <a className="px-6  md:hidden py-2 bg-blog rounded-xl text-4xl font-user-bold mb-4 ">Blogs</a>
+        <a className="px-6 md:px-12 py-2 border-2 border-white rounded-xl text-4xl font-user-bold text-white mb-4 ml-7 mr-10 md:ml-3">Hire me</a>
+      </div>
+      <div >
+        <FaBars size={20} color="white" onClick={handleMenu} className="md:hidden " />
+      </div>
+
+      <hr className="w-full mx-auto my-8   absolute top-[10vh]  z-10" />
+    </header>
+  );
 }

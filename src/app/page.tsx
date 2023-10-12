@@ -7,8 +7,7 @@ export default function Home() {
 <main>
   <Navbar/>
   <Header/>
-
-  <Project/>
+  
 </main>
   )
 }
